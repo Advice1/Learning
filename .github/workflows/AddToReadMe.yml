@@ -29,8 +29,8 @@ jobs:
         name: Append
         with:
           path: Append.txt
+          write-mode: append
           #line break
           contents: | 
-            ADDED NEW TEXT to ADVICES Append.txt file!
-             write-mode: append
-          message: 'Appended by Github Actions - ${date}'
+             ADDED NEW TEXT to ADVICES Append.txt file!
+             
