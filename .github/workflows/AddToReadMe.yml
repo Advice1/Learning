@@ -28,9 +28,9 @@ jobs:
       # Runs a single command using the runners shell
         name: Append
         with:
-          path: README.md
+          path: Append.txt
           #line break
           contents: | 
-            ADDED NEW TEXT to ADVICES READ ME!
+            ADDED NEW TEXT to ADVICES Append.txt file!
              write-mode: append
           message: 'Appended by Github Actions - ${date}'
