@@ -29,9 +29,7 @@ jobs:
         name: Append to file
          run:|
           echo "Appending to a text" >> Append.txt
-         
-        #Commit and Push Changes
-      - uses: ad-m/github-push-action@main
+ 
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: "Append to output.txt"
