@@ -26,13 +26,13 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-        name: Append to file
+        name: Append_to_file
          run:|
-          echo "Appending to a text" >> Append.txt
+          echo "Appending to a text" >> ./Learning/steps/Append.txt
  
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: "Append to output.txt"
+          message: "Append to my text output.txt"
           #path: Append.txt
           #write-mode: append
           #line break
