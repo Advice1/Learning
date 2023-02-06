@@ -26,13 +26,8 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-        name: Append_to_file
-         run:|
-          echo "Appending to a text" >> path/to/Append.txt 
+      - name: Append_to_file
+        run: |
+          echo "Appending to a text" >> ../Append.txt 
+          cat ../Append.txt 
  
-          #path: Append.txt
-          #write-mode: append
-          #line break
-          #contents: | 
-             #ADDED NEW TEXT to ADVICES Append.txt file!
-             
