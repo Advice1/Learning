@@ -28,6 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Append_to_file
         run: |
-          echo "Appending to a text" >> ../Append.txt 
+          echo "Appending to a file with Djo" >> ../Append.txt 
+          echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
           cat ../Append.txt 
+          echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
  
