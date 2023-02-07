@@ -26,10 +26,16 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Append_to_file
+      - name: Append to file
         run: |
           echo "Appending to a file with Djo" >> ../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
           cat ../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
+      - name: Push changed to github
+        # Hint: use github token to push your changes
+      - uses: actions-js/push@master #using the action to 
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
+
  
