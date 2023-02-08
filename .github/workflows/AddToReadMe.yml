@@ -34,7 +34,7 @@ jobs:
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
       - name: commit changed to github
         # Hint: use github token to push your changes
-        uses: ad-m/github-push-action@v0.7.0
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
           branch: steps
