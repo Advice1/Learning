@@ -34,8 +34,6 @@ jobs:
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
       - name: commit changed to github
         # Hint: use github token to push your changes
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
         run: |
           git config --local user.email "drnxumza@gmail.com"
           git config --local user.name "Advice"
