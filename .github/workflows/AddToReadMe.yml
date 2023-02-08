@@ -37,9 +37,8 @@ jobs:
         run: |
           git config --local user.email "drnxumza@gmail.com"
           git config --local user.name "Advice"
-          git commit -a -m "Commit changes"
-      - name: push changes to github
-        uses: ad-m/github-push-action@master #using the action to
+          git commit -m "Commit changes"
+          git push origin steps
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
 
