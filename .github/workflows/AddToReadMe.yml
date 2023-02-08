@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Append to file
         run: |
-          echo "Appending to a file with Djo" >> ../Append.txt 
+          echo "Appending to a file with Phumlani" >> ../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
           cat ../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
