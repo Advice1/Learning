@@ -21,9 +21,9 @@ jobs:
     #checking
     - name: Append to Text
       run: |
-        echo "Appending to a file with ADVd to file" >> ../../Append.txt 
+        echo "Appending to a file with ADVd to file" >> ../../Appends.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
-          cat ../../Append.txt 
+          cat ../../Appends.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
     - name: Commit files
       run: |
@@ -32,8 +32,8 @@ jobs:
         echo "Appending to a file with ADVice Nxumalo" >> Append.txt
         git add Append.txt
         cat Append.txt
-        git commit -m 'changes have been added double'
-        cat ../../Append.txt
+        git commit -m 'changes have been added triple'
+        cat ../../Appends.txt
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
