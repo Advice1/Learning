@@ -33,14 +33,7 @@ jobs:
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
           cat ../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
-      - name: commit changed to github
-        # Hint: use github token to push your changes
-        run: |
-          git config --global user.email "drnxumza@gmail.com"
-          git config --global user.name "Advice"
-          git add .
-          git commit -m "Commit changes"
-          git push origin steps
+      
        
 
  
