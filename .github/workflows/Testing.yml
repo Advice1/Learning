@@ -31,11 +31,6 @@ jobs:
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
       - name: commit changed to github
         # Hint: use github token to push your changes
-        run: |
-          git config --global user.email "drnxumza@gmail.com"
-          git config --global user.name "Advice"
-          git add .
-          git commit -m "testing commit"
       - name: Push to code
         uses: ad-m/github-push-action@master
         with:
