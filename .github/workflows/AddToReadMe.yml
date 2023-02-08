@@ -24,10 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-        with:
-          ref: steps
-        env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
+
       # Runs a single command using the runners shell
       - name: Append to file
         run: |
@@ -37,12 +34,10 @@ jobs:
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
       - name: commit changed to github
         # Hint: use github token to push your changes
-        run: |
-          git config --global user.email "drnxumza@gmail.com"
-          git config --global user.name "Advice"
-          git add .
-          git commit -m "Commit changes"
-          git push origin steps
+        uses: ad-m/github-push-action@v0.7.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
+          branch: steps
        
 
  
