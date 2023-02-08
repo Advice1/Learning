@@ -32,9 +32,14 @@ jobs:
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
           cat ../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
-      - name: Push changed to github
+      - name: commit changed to github
         # Hint: use github token to push your changes
-        uses: actions-js/push@steps #using the action to
+        run: |
+          git config --local user.email "drnxumza@gmail.com"
+          git config --local user.name "Advice"
+          git commit -a -m "Commit changes"
+      - name: push changes to github
+        uses: ad-m/github-push-action@master #using the action to
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
 
