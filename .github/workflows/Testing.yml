@@ -25,7 +25,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Append to file test
         run: |
-          echo "Appending to a file with Djo" >> ../../Append.txt 
+          echo "I Appending to a file with Djo" >> ../../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
           cat ../../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
