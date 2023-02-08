@@ -31,7 +31,7 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        echo "Appending to a file with ADVd to file" >> ../../Append.txt
+        echo "Appending to a file with ADVd to file" >> Append.txt
         git add Append.txt
         cat Append.txt
         git commit -m 'changes have been added'
