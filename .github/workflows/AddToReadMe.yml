@@ -38,6 +38,7 @@ jobs:
         run: |
           git config --local user.email "drnxumza@gmail.com"
           git config --local user.name "Advice"
+          git add .
           git commit -m "Commit changes"
           git push origin steps
        
