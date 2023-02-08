@@ -34,7 +34,7 @@ jobs:
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
       - name: Push changed to github
         # Hint: use github token to push your changes
-        uses: actions-js/push@master #using the action to
+        uses: actions-js/push@steps #using the action to
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
 
