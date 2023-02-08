@@ -30,7 +30,7 @@ jobs:
         run: |
           echo "Appending to a file with Phumlani Arendse" >> ../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
-          cat ../Append.txt 
+          cat ../../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
       - name: commit changed to github
         # Hint: use github token to push your changes
