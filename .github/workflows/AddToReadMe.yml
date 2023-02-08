@@ -34,7 +34,11 @@ jobs:
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
       - name: commit changes to github
         # Hint: use github token to push your changes
-        uses: ad-m/github-push-action@master
+        run: |
+          git config --local user.email "drnxumza@gmail.com"
+          git config --local user.name "advice"
+      - name: Push change
+        uses: EndBug/add-and-commit@v7
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  #authentication
           branch: steps
