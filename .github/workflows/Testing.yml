@@ -22,16 +22,11 @@ jobs:
     - name: Append to Text
       run: |
         echo "Appending to a file with ADVd to file" >> Append.txt 
-          echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
-          cat Append.txt 
-          echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
     - name: Commit files
       run: |
         git config --local user.email "drnxumza@gmail.com"
         git config --local user.name "advice"
-        echo "Appending to a file with Phumlani" >> Append.txt
         git add Append.txt
-        cat Append.txt
         git commit -m 'changes have been added triple#'
         cat Append.txt
     - name: Push changes
