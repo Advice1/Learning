@@ -21,19 +21,19 @@ jobs:
     #checking
     - name: Append to Text
       run: |
-        echo "Appending to a file with ADVd to file" >> ../../Appends.txt 
+        echo "Appending to a file with ADVd to file" >> ../../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
-          cat ../../Appends.txt 
+          cat ../../Append.txt 
           echo "-=-=-=-=--==-=--=-=-==-=-=-=-=-"
     - name: Commit files
       run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
+        git config --local user.email "drnxumza@gmail.com"
+        git config --local user.name "advice"
         echo "Appending to a file with ADVice Nxumalo" >> Append.txt
         git add Append.txt
         cat Append.txt
-        git commit -m 'changes have been added triple'
-        cat ../../Appends.txt
+        git commit -m 'changes have been added triple#'
+        cat ../../Append.txt
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
