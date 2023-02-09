@@ -29,7 +29,7 @@ jobs:
       run: |
         git config --local user.email "drnxumza@gmail.com"
         git config --local user.name "advice"
-        echo "Appending to a file with ADVice Nxumalo" >> Append.txt
+        echo "Appending to a file with Phumlani" >> Append.txt
         git add Append.txt
         cat Append.txt
         git commit -m 'changes have been added triple#'
